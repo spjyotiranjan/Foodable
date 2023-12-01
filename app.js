@@ -6,6 +6,10 @@ document.getElementById("viewCategory").addEventListener("click",()=>{
     category.classList.remove("hide")
     searchResult.classList.add("hide")
 })
+document.querySelector(".logo").addEventListener("click",()=>{
+    let main = document.getElementById("main")
+    window.scrollTo(main.offsetLeft,main.offsetTop-200)
+})
 
 //Managing Function to show dynamic Random Cards on every reload
 async function showRandomCard() {
